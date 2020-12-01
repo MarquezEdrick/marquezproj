@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Consad 
+{
+private:
+	double weight;
+	string color;
+	int age;
+public:
+	void setWeight(double w){weight = w;}
+	void setColor(string c){color = c;}
+	void setAge(int a){age = a;}
+
+	double getWeight () {return weight;}
+	string getColor () {return color;}
+	int getAge () {return age;}
+
+
+};
+
+
+
+
+int main()
+{
+	Consad R;
+
+	R.setWeight(350.0);
+	R.setColor("Tan");
+	R.setAge(5) ;
+
+	cout<< R.getWeight <<endl;
+	cout<< R.getColor <<endl;
+	cout<< R.getAge <<endl;
+
+	return 0;
+	
+}
